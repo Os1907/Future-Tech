@@ -42,10 +42,10 @@ export default function BlogSections() {
                     <div className="grid grid-cols-3 ">
 
             <div className="lg:col-span-1 col-span-3  lg:py-16 py-5  ">
-                <div className="w-full flex justify-center lg:justify-start">
+                <div className="w-full flex justify-center lg:justify-start   ">
                 <Image src={item.icon} alt="icon"/>
                 </div>
-              <h4 className="text-white lg:text-3xl text-xl font-semibold mr-3 lg:mt-3 mt-2 text-center lg:text-left">
+              <h4 className="text-white lg:text-3xl text- font-semibold mr-3 lg:mt-3 mt-2 text-center lg:text-left">
                 {item.h4}
               </h4>
               <p className="lg:my-4 text-h2head lg:text-sm text-[12px] my-2 text-center lg:text-left">
@@ -56,27 +56,27 @@ export default function BlogSections() {
             </div>
             <div className="lg:col-span-2 col-span-3 lg:border-l border-lineColor lg:py-16 lg:px-10  border-b pb-5 ">
               <div className="grid grid-cols-2  gap-4">
-                <div className="border-lineColor border rounded-xl py-5 px-8 lg:col-span-1 col-span-2 bg-lightDark">
-                  <h4 className="text-white mb-3 lg:text-xl text-lg font-medium">{item.titleBox1}</h4>
+                <div className="border-lineColor border rounded-xl lg:py-5 p-4 lg:px-8  lg:col-span-1 col-span-2 bg-lightDark">
+                  <h4 className="text-white mb-3 lg:text-xl text-sm font-medium">{item.titleBox1}</h4>
                   <p className="text-h2head lg:text-sm text-[12px]">
                   {item.box1}
                   </p>
                 </div>
-                <div className="border-lineColor border rounded-xl py-5 px-6 lg:col-span-1 col-span-2 bg-lightDark">
-                  <h4 className="text-white mb-3 lg:text-xl text-lg font-medium">{item.titleBox2}</h4>
+                <div className="border-lineColor border rounded-xl lg:py-5 p-4 lg:px-8  lg:col-span-1 col-span-2 bg-lightDark">
+                  <h4 className="text-white mb-3 lg:text-xl text-sm font-medium">{item.titleBox2}</h4>
                   <p className="text-h2head lg:text-sm text-[12px]">
                   {item.box2}
                   </p>
                 </div>
-                <div className="border-lineColor border rounded-xl py-5 px-6 lg:col-span-1 col-span-2 bg-lightDark">
-                  <h4 className="text-white mb-3 lg:text-xl text-lg font-medium">{item.titleBox3}</h4>
+                <div className="border-lineColor border rounded-xl lg:py-5 p-4 lg:px-8  lg:col-span-1 col-span-2 bg-lightDark">
+                  <h4 className="text-white mb-3 lg:text-xl text-sm font-medium">{item.titleBox3}</h4>
                   <p className="text-h2head lg:text-sm text-[12px]">
                   {item.box3}
 
                   </p>
                 </div>
-                <div className="border-lineColor border rounded-xl py-5 px-6 lg:col-span-1 col-span-2 bg-lightDark">
-                  <h4 className="text-white mb-3 lg:text-xl text-lg font-medium">{item.titleBox4}</h4>
+                <div className="border-lineColor border rounded-xl lg:py-5 p-4 lg:px-8  lg:col-span-1 col-span-2 bg-lightDark">
+                  <h4 className="text-white mb-3 lg:text-xl text-sm font-medium">{item.titleBox4}</h4>
                   <p className="text-h2head lg:text-sm text-[12px]">
                   {item.box4}
 

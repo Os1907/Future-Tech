@@ -74,17 +74,19 @@ export default function UserComments(props) {
             asApi.map((item)=>{
                 return <>
                  <div className='lg:mx-20 border-t border-lineColor mx-4 grid grid-cols-4 lg:py-16 py-5'>
-            <div className='lg:col-span-1 col-span-4 flex items-center  lg:justify-start my-4 lg:my-0 '>
+            <div className='lg:col-span-1 col-span-4 flex items-center justify-between  lg:justify-start my-4 lg:my-0  '>
+                <div className='flex items-center '>
                 <div>
-                    <Image src={item.image} alt='teamImage' className='size-16'/>
+                    <Image src={item.image} alt='teamImage' className='lg:size-16 size-14'/>
                 </div>
-                <div className='ml-5'>
-                    <h4 className='text-white font-semibold text-lg'>
+                <div className='lg:ml-5 ml-3'>
+                    <h4 className='text-white font-semibold lg:text-lg text-base'>
                     {item.name}
                     </h4>
                     <p className='text-h2head lg:text-sm text-[12px]'>
                     {item.position}
                     </p>
+                </div> 
                 </div>
                 <div className='ml-10 lg:hidden '>
                 <Button value={"view Blog"}/>
@@ -105,21 +107,21 @@ export default function UserComments(props) {
                 
                     <div className='flex mt-3 justify-center lg:justify-start  ml-2'>
                         <div className='py-2 bg-lightDark px-3  cursor-pointer border border-lineColor rounded-full flex '>
-                            <Image src={red} alt='' className=' size-5 '/>
-                            <p className='text-h2head ml-1  text-sm '>
+                            <Image src={red} alt='' className=' lg:size-5 size-4 '/>
+                            <p className='text-h2head ml-1  lg:text-sm text-[12px]'>
                             {item.likes}
                             </p>
                         </div>
                         <div className='py-2 bg-lightDark px-3 cursor-pointer border mx-3 border-lineColor rounded-full flex '>
-                            <Image src={comment} alt='' className=' size-5'/>
-                            <p className='text-h2head ml-1  text-sm '>
+                            <Image src={comment} alt='' className=' lg:size-5 size-4'/>
+                            <p className='text-h2head ml-1  lg:text-sm text-[12px]'>
                             {item.comment}
 
                             </p>
                         </div>
                         <div className='py-2 bg-lightDark px-3 cursor-pointer border border-lineColor rounded-full flex '>
-                            <Image src={share} alt='' className=' size-5'/>
-                            <p className='text-h2head ml-1  text-sm '>
+                            <Image src={share} alt='' className=' lg:size-5 size-4'/>
+                            <p className='text-h2head ml-1  lg:text-sm text-[12px]'>
                             {item.share}
 
                             </p>

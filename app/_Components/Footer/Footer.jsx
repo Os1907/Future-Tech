@@ -7,7 +7,7 @@ export default function Footer() {
     <>
     
 
-<footer className="bg-dark">
+<footer className="bg-dark border-t border-lineColor">
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="lg:flex lg:items-start lg:gap-8">
       <div className='flex justify-center'>
