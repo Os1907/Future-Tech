@@ -14,14 +14,14 @@ export default function BoxVideo(props) {
 {
     props?.value.map((item , index)=>{
          return <>
-         <div key={index * Math.random()} className="lg:col-span-1 col-span-3 lg:p-10 lg:pb-5 p-4  lg:border-r border-t border-lineColor ">
+         <div key={index * Math.random()} className="lg:col-span-1 col-span-3 lg:p-10 lg:pb-5 p-4  lg:border-r border-t border-lineColor flex flex-col items-center">
           <Link target='_blank' href="https://www.youtube.com/watch?v=MTJZpO3bTpg&pp=ygUKYWkgcG9kY2FzdA%3D%3D">
             <Image src={item.image} alt="" />
             </Link>  
             <div>
           <Link target='_blank' href="https://www.youtube.com/watch?v=MTJZpO3bTpg&pp=ygUKYWkgcG9kY2FzdA%3D%3D">
 
-                <h5 className='mt-2 text-white text-lg font-semibold'>
+                <h5 className='mt-2 text-white text-lg font-semibold text-center lg:text-start'>
                 {item.name}
                 </h5>
             </Link>  

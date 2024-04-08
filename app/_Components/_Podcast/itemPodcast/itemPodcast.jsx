@@ -14,11 +14,11 @@ export default function ItemPodcast(props) {
           
           <div className="grid grid-cols-5 mx-4 lg:mx-20 border-t border-lineColor ">
             
-                <div className={item.star  == "yes" ? "lg:col-span-2 col-span-5  lg:py-28 py-3 flex flex-col items-start  lg:justify-center lg:items-start  " : " lg:col-span-2 col-span-5  lg:py-28 py-3 flex flex-col items-center  lg:justify-center lg:items-start"}>
+                <div className= " lg:col-span-2 col-span-5  lg:py-28 py-2 flex flex-col items-center  lg:justify-center lg:items-start">
 
                     <Image src={item.icon} alt='icon' className='lg:size-auto size-16 '/>
                     <div className='flex justify-between items-center w-full '>
-                        <h5 className='lg:my-5 my-3 text-center lg:text-left text-white lg:text-4xl text-2xl font-semibold mx-4 lg:mx-0'>
+                        <h5 className='lg:my-5 my-3 text-center lg:text-left text-white lg:text-4xl text-2xl font-semibold ml-4 lg:mx-0 li'>
                         {item.title}
                     </h5>
                     {
@@ -60,7 +60,7 @@ export default function ItemPodcast(props) {
                     }
 
 {
-    item?.conceptButton? <div className='w-full  py-4 lg:py-6 flex justify-center '>
+    item?.conceptButton? <div className='w-full  py-4 lg:py-6 flex justify-center lg:justify-start '>
                          <Button value={item.conceptButton}/>
                     </div> : ""
 }
@@ -79,35 +79,35 @@ export default function ItemPodcast(props) {
                         Delves into the transformative impact of AI 
                         </h5>
                         <p className='text-h2head  text-sm'>
-                        Join Dr. Sarah Mitchell as she delves into the transformative impact of AI on industries, featuring expert interviews and real-world case studies. Explore the possibilities of AI in healthcare, finance, and more.
+                       {item.paragraph}
                         </p>
-                        <div className='flex my-5 justify-center lg:justify-between flex-wrap  items-center gap-4 lg:gap-0'>
-                        <div className='border border-lineColor lg:px-10 px-5 lg:py-3 py-2 rounded-lg bg-lightDark'>
-                                <p className='text-h2head text-sm lg:text-base'>
+                        <div className='grid grid-cols-3 my-5 justify-center lg:justify-between flex-wrap  items-center gap-4 l'>
+                        <div className='border  col-auto lg:col-span-1 border-lineColor px-3 lg:py-3 py-2 rounded-lg bg-lightDark'>
+                                <p className='text-h2head text-[12px] line-clamp-1 lg:text-base'>
                                     {item.box1}
                                 </p>
-                                <p className='text-white my-1 text-sm lg:text-base'>
+                                <p className='text-white my-1 text-[12px] line-clamp-1 lg:text-base'>
                                 {item.box1child}
 
                                 </p>
                             </div>
-                            <div className='border border-lineColor lg:px-10 px-5 lg:py-3 py-2 rounded-lg bg-lightDark'>
-                                <p className='text-h2head text-sm lg:text-base'>
+                            <div className='border  col-auto lg:col-span-1 border-lineColor px-3 lg:py-3 py-2 rounded-lg bg-lightDark'>
+                                <p className='text-h2head text-[12px] line-clamp-1 lg:text-base'>
                                 {item.box2}
 
                                 </p>
-                                <p className='text-white my-1 text-sm lg:text-base'>
+                                <p className='text-white my-1 text-[12px] line-clamp-1 lg:text-base'>
                                 {item.box2child}
 
                                 </p>
                             </div>
                            
-                            <div className='border border-lineColor lg:px-10 px-5 lg:py-3 py-2 rounded-lg bg-lightDark'>
-                                <p className='text-h2head text-sm lg:text-base'>
+                            <div className='border  col-auto lg:col-span-1 border-lineColor  px-3 lg:py-3 py-2 rounded-lg bg-lightDark'>
+                                <p className='text-h2head text-[12px] lg:text-base line-clamp-1'>
                                 {item.box3}
 
                                 </p>
-                                <p className='text-white my-1 text-sm lg:text-base'>
+                                <p className='text-white my-1 text-[12px] lg:text-base line-clamp-1'>
                                 {item.box3child}
 
                                 </p>
