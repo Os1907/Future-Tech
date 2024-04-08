@@ -23,6 +23,7 @@ export default function Podcast(props) {
         title: "AI Revolution ",
         stars:"yes",
         button: "yes" ,
+        host : "yes",
         buttonTitle: "Dr.Sarah Mitchell" ,
         star:"yes",
         cover : cover ,
@@ -40,6 +41,8 @@ export default function Podcast(props) {
             title: " AI Conversations",
             stars:"yes",
             button: "yes" ,
+        host : "yes",
+
             buttonTitle: "Mark Anderson" ,
             star:"yes",
             cover : cover2 ,
@@ -60,56 +63,12 @@ export default function Podcast(props) {
                 main:"Latest Podcast Episodes"
         }
     ]
-    const podcast =[
-        {
-        image:img,
-        name:"AI in Healthcare",
-        title:"Dr. Lisa Adams discusses how AI is revolutionizing healthcare, from diagnostic tools to patient care.",
-        button:"listen Podcast"
-        },
-        {
-        image:img2,
-        name:"AI Ethics",
-        title:"Explore the ethical dilemmas and considerations surrounding AI with guest speaker Dr. Michael Turner.",
-        button:"listen Podcast"
-
-        },
-        {
-        image:img3,
-        name:"Machine Learning Explained",
-        title:"Dive into the intricacies of machine learning with AI expert Sarah Davis. In this episode",
-        button:"listen Podcast"
-
-        },
-        {
-        image:img4,
-        name:"AI and the Future of Work",
-        title:"Dr. Olivia White joins John Parker to discuss the evolving role of AI in the workplace.",
-        button:"listen Podcast"
-
-        },
-        {
-        image:img5,
-        name:"AI in Education",
-        title:"Explore the role of AI in education as Emily Turner discusses how AI is transforming the learning experience.",
-        button:"listen Podcast"
-
-        },
-        {
-            image:img6,
-            name:"AI in Entertainment",
-            title:"David Smith as they explore the influence of AI in the entertainment industry.",
-        button:"listen Podcast"
-
-        },
-
-    ]
+    
   return (
     <>
     <div className=' bg-dark border-t border-lineColor '>
     <ItemPodcast value={data}/>
     <MainTtile value={title[0]} />
-    <BoxVideo value={podcast}/>
     </div>
     
     

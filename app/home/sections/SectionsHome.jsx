@@ -38,7 +38,7 @@ export default function SectionsHome() {
    ] 
   return (
     <>
-<header className='min-h-screen bg-dark '>
+<header className='min-h-screen bg-dark lg:pt-20 pt-10 '>
         <div className='lg:mx-20 mx-4 '>
             <Header/>
         </div>

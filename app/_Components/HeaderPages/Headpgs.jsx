@@ -4,7 +4,7 @@ export default function Headpgs(props) {
   return (
     <>
     <div className='lg:mx-20 mx-4 '>
-            <div className='lg:py-24 py-5'>
+            <div className='lg:py-20 py-5'>
                 <h2 className='text-white lg:text-left text-center lg:text-7xl  font-semibold   text-4xl sm:text-5xl md:text-6xl  '>
                 {props.title}<p className='font-normal sm:inline'>  <span className='sm:hidden'>{props.h3}</span> </p>
                 {/* {"Today's"} Headline:   */}

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function ItemPodcast(props) {
-    // console.log(props.value)
+
   return (
     <>
     {
@@ -14,26 +14,37 @@ export default function ItemPodcast(props) {
           
           <div className="grid grid-cols-5 mx-4 lg:mx-20 border-t border-lineColor ">
             
-                <div className="lg:col-span-2 col-span-5  lg:py-28 py-3 flex flex-col items-start  lg:justify-center lg:items-start  ">
+                <div className={item.star  == "yes" ? "lg:col-span-2 col-span-5  lg:py-28 py-3 flex flex-col items-start  lg:justify-center lg:items-start  " : " lg:col-span-2 col-span-5  lg:py-28 py-3 flex flex-col items-center  lg:justify-center lg:items-start"}>
 
                     <Image src={item.icon} alt='icon' className='lg:size-auto size-16 '/>
                     <div className='flex justify-between items-center w-full '>
-                        <h5 className='lg:my-5 my-3 text-center lg:text-left text-white lg:text-4xl text-2xl font-semibold lg:mx-4'>
+                        <h5 className='lg:my-5 my-3 text-center lg:text-left text-white lg:text-4xl text-2xl font-semibold mx-4 lg:mx-0'>
                         {item.title}
                     </h5>
-                    <div className=' flex items-center  rounded-full bg-dark border border-lineColor py-1 px-3 mr-4'>
+                    {
+                        item.star  == "yes" ? <div className=' flex items-center  rounded-full bg-dark border border-lineColor py-1 px-3 mr-4'>
                         <FaStar className=' mx-1 text-logo'/>
                         <FaStar className=' mx-1 text-logo'/>
                         <FaStar className=' mx-1 text-logo'/>
                         <FaStar className=' mx-1 text-logo'/>
                         <FaStar className=' mx-1 text-logo'/>
+                    </div> : ""
+                    }
+                    
                     </div>
-                    </div>
+                    <p className='text-h2head text-sm ml-2'>
+                        {item?.smallTitle }
+                        </p> 
+                    
                     {
                        item.button == "yes" ? <div className='w-[97%]  bg-lightDark border border-lineColor lg:p-8 p-3 rounded-xl'>
-                        <p className='text-h2head text-sm'>
+                        {
+                            item.host == "yes" ? <p className='text-h2head text-sm'>
                             Host
-                        </p>
+                        </p> : ""
+                        }
+
+                        
                         <div className='flex justify-between'>
                         <h4 className='text-white'>
                             {
@@ -44,6 +55,19 @@ export default function ItemPodcast(props) {
                         </div>
                     </div> : ""
                     }
+                    {
+
+                    }
+
+{
+    item?.conceptButton? <div className='w-full  py-4 lg:py-6 flex justify-center '>
+                         <Button value={item.conceptButton}/>
+                    </div> : ""
+}
+                    
+                       
+
+
                     
 
                 </div>
