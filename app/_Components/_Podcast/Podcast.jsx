@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-import { FaStar } from 'react-icons/fa'
 import icon from '../../../public/Images/podcast/podcastIco1.png'
 import icon2 from '../../../public/Images/podcast/podcastIco2.png'
 import cover from '../../../public/Images/podcast/container.png'

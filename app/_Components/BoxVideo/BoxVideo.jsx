@@ -12,9 +12,9 @@ export default function BoxVideo(props) {
     <div className="grid grid-cols-3">
 
 {
-    props?.value.map((item)=>{
+    props?.value.map((item , index)=>{
          return <>
-         <div className="lg:col-span-1 col-span-3 lg:p-10 lg:pb-5 p-4  lg:border-r border-t border-lineColor ">
+         <div key={index * Math.random()} className="lg:col-span-1 col-span-3 lg:p-10 lg:pb-5 p-4  lg:border-r border-t border-lineColor ">
           <Link target='_blank' href="https://www.youtube.com/watch?v=MTJZpO3bTpg&pp=ygUKYWkgcG9kY2FzdA%3D%3D">
             <Image src={item.image} alt="" />
             </Link>  
@@ -27,7 +27,7 @@ export default function BoxVideo(props) {
             </Link>  
             <Link target='_blank' href="https://www.youtube.com/watch?v=MTJZpO3bTpg&pp=ygUKYWkgcG9kY2FzdA%3D%3D">
 
-                <p className='text-h2head my-1 text-sm'>
+                <p className='text-h2head my-1 text-sm '>
                 {item.title}
 
                 </p>
