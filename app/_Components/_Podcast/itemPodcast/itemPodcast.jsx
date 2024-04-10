@@ -65,10 +65,6 @@ export default function ItemPodcast(props) {
                     </div> : ""
 }
                     
-                       
-
-
-                    
 
                 </div>
 
