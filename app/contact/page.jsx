@@ -64,7 +64,7 @@ export default function page() {
         <div className="lg:mx-20 mx-4 grid lg:grid-cols-2 md:col-span-1 ">
           <div className="col-span-1 flex flex-col items-center lg:items-start justify-center mt-4 lg:mt-0 ">
             <Image src={icon} alt="icon-section" />
-            <p className="text-white lg:text-5xl text-2xl font-medium lg:mr-10 lg:mt-3 ">
+            <p className="text-white lg:text-5xl text-2xl font-medium lg:mr-10 lg:mt-3 text-start lg:text-center">
               Get in Touch with AI Podcasts
             </p>
           </div>
@@ -190,10 +190,10 @@ export default function page() {
               alt="icon-section"
               className="motion-safe:animate-spin  transition-[1000]"
             />
-            <h3 className="text-white  text-2xl font-medium lg:mr-10 lg:mt-3 ">
+            <h3 className="text-white  text-2xl font-medium lg:mr-10 lg:mt-3 text-start lg:text-center ">
               Asked Question
             </h3>
-            <p className="text-h2head lg:text-base md:text-sm text-[12px]">
+            <p className="text-h2head lg:text-base md:text-sm text-[12px] text-start lg:text-center">
               If the question is not available on our FAQ section , Fell free to
               contact us personally , we will resolve your respective doubts.
             </p>
