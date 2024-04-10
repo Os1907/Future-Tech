@@ -11,51 +11,53 @@ export default function page() {
         <div className=" border-b border-lineColor ">
           <div className="lg:mx-20 mx-4">
             <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1">
-              <div className="col-span-1 pr-8 py-14">
-                <h4 className="text-white text-lg">General Inquiries</h4>
+
+              <div className="col-span-1 lg:pr-8 px-1 lg:py-14 py-4">
+                <h4 className="text-white lg:text-lg text-base lg:text-start text-center">General Inquiries</h4>
                 <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark w-[100%]">
                   <p className="text-h2head text-sm">Contact@ai-podcasts.com</p>
                   <MdArrowOutward className="text-logo mx-1" />
                 </div>
-                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark w-[75%]">
+                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark lg:w-[75%] w-full">
                   <p className="text-h2head text-sm">+(123)456-7890</p>
                   <MdArrowOutward className="text-logo mx-1" />
                 </div>
               </div>
 
-              <div className="col-span-1 border-l border-lineColor pl-8 pr-3 py-14">
-                <h4 className="text-white text-lg">Technical Support</h4>
+              <div className="col-span-1 lg:border-l border-t lg:border-t-0 border-lineColor lg:pr-8 pl-3 px-1 lg:py-14 py-4">
+                <h4 className="text-white lg:text-lg text-base lg:text-start text-center">Technical Support</h4>
                 <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark  w-[100%]">
                   <p className="text-h2head text-sm ">Contact@ai-podcasts.com</p>
                   <MdArrowOutward className="text-logo " />
                 </div>
-                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark w-[75%]">
+                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark lg:w-[75%] w-full">
                   <p className="text-h2head text-sm">+(123)456-7890</p>
                   <MdArrowOutward className="text-logo mx-1" />
                 </div>
               </div>
 
-              <div className="col-span-1 border-l border-lineColor pl-8 py-14">
-                <h4 className="text-white text-lg ">Our Office</h4>
-                  <p className="text-h2head text-sm mt-5 pr-8">
+              <div className="col-span-1 lg:border-l border-t lg:border-t-0 border-lineColor lg:pr-8 pl-3 px-1  lg:py-14 py-4">
+                <h4 className="text-white lg:text-lg text-base lg:text-start text-center ">Our Office</h4>
+                  <p className="text-h2head text-sm mt-5 lg:pr-8  text-center lg:text-start">
                   Address: 123 AI Tech Avenue, Tenaille, 54321
                   </p>
                      
                
-                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark w-[75%]">
+                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark lg:w-[75%] w-full">
                   <p className="text-h2head text-sm">+(123)456-7890</p>
                   <MdArrowOutward className="text-logo mx-1" />
                 </div>
               </div>
 
-              <div className="col-span-1 border-l border-lineColor pl-8 py-14">
-                <h4 className="text-white text-lg">Connect with Us</h4>
+              <div className="col-span-1 lg:border-l border-t lg:border-t-0 border-lineColor lg:pr-8 pl-3 px-1  lg:py-14 py-4">
+                <h4 className="text-white lg:text-lg text-base lg:text-start text-center">Connect with Us</h4>
               
-                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark w-[75%]">
+                <div className="border border-lineColor flex items-center justify-center mt-5 rounded-lg  p-4 bg-lightDark lg:w-[75%] w-full">
                   <p className="text-h2head text-sm">+(123)456-7890</p>
                   <MdArrowOutward className="text-logo mx-1" />
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -182,7 +184,7 @@ export default function page() {
             </div>
           </div>
 
-          <div className="col-span-1 flex flex-col items-center lg:items-start justify-center mt-4 lg:mt-0 border-t border-lineColor ">
+          <div className="col-span-1 flex flex-col items-center lg:items-start justify-center pt-8 lg:pt-4 lg:mt-0 border-t border-lineColor ">
             <Image
               src={icon2}
               alt="icon-section"
@@ -191,7 +193,7 @@ export default function page() {
             <h3 className="text-white  text-2xl font-medium lg:mr-10 lg:mt-3 ">
               Asked Question
             </h3>
-            <p className="text-h2head">
+            <p className="text-h2head lg:text-base md:text-sm text-[12px]">
               If the question is not available on our FAQ section , Fell free to
               contact us personally , we will resolve your respective doubts.
             </p>
@@ -199,29 +201,29 @@ export default function page() {
 
           <div className="col-span-1 mt-4 lg:mt-0 lg:border-l border-t border-lineColor ">
 
-            <details className="w-full  mx-5 my-5 rounded-lg   bg-lightDark border border-lineColor ">
-              <summary className="m-1 pl-3 py-3   cursor-pointer w-full text-white  ">What is AI ?</summary>
+            <details className="w-full px-3 lg:px-0 lg:mx-5  my-5 rounded-lg   bg-lightDark border border-lineColor ">
+              <summary className="m-1 lg:pl-3 py-3 lg:text-base text-sm   cursor-pointer w-full text-white  ">What is AI ?</summary>
               <p className="dropdown-content text-sm font-light mx-5 py-3 text-h2head bg-lightDark border-t  border-lineColor  ">
               AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
               </p>
             </details>
 
-            <details className="w-full  mx-5 rounded-lg   bg-lightDark border border-lineColor ">
-              <summary className="m-1 pl-3 py-3   cursor-pointer w-full text-white  ">How can I listen to your podcasts ?</summary>
+            <details className="w-full px-3 lg:px-0  lg:mx-5 rounded-lg   bg-lightDark border border-lineColor ">
+              <summary className="m-1 lg:pl-3 py-3 lg:text-base text-sm   cursor-pointer w-full text-white  ">How can I listen to your podcasts ?</summary>
               <p className="dropdown-content mx-5  font-light text-sm py-3 text-h2head bg-lightDark border-t  border-lineColor  ">
               Youtube channel , Apple Podcast , Spotify channel 
               </p>
             </details>
 
-            <details className="w-full  m-5  rounded-lg   bg-lightDark border border-lineColor ">
-              <summary className="m-1 pl-3 py-3   cursor-pointer w-full text-white  ">Are your podcasts free to listen to ?</summary>
+            <details className="w-full px-3 lg:px-0 lg:mx-5  my-5  rounded-lg   bg-lightDark border border-lineColor ">
+              <summary className="m-1 lg:pl-3 py-3 lg:text-base text-sm  cursor-pointer w-full text-white  ">Are your podcasts free to listen to ?</summary>
               <p className="dropdown-content mx-5 font-light text-sm m-3 py-3 text-h2head bg-lightDark border-t  border-lineColor  ">
               It always will be free
               </p>
             </details>
             
-            <details className="w-full  m-5  rounded-lg   bg-lightDark border border-lineColor ">
-              <summary className="m-1 pl-3 py-3   cursor-pointer w-full text-white  ">Can I download episodes to listen offline ?</summary>
+            <details className="w-full px-3 lg:px-0  lg:mx-5  my-5 rounded-lg   bg-lightDark border border-lineColor ">
+              <summary className="m-1 lg:pl-3 py-3  lg:text-base text-sm  cursor-pointer w-full text-white  ">Can I download episodes to listen offline ?</summary>
               <p className="dropdown-content mx-5 font-light text-sm m-3 py-3 text-h2head bg-lightDark border-t  border-lineColor  ">
               Soon it will be available
               </p>
